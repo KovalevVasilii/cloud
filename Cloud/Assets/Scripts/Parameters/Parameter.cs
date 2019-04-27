@@ -4,7 +4,7 @@ using System.Collections;
 public class Parameter<T> : ITitle
 {
     [SerializeField]
-    private T value;
+    private T value { set; get; }
     
     [SerializeField]
     private string title;
@@ -12,11 +12,6 @@ public class Parameter<T> : ITitle
     public string GetTitle()
     {
         return title;
-    }
-
-    public T GetValue()
-    {
-        return value;
     }
 
     public Parameter(string title, T value)
