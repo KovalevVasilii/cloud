@@ -3,5 +3,10 @@ using System.Collections;
 
 public class World
 {
-    private Parameters parameters = new Parameters();    
+    private Parameters parameters;
+
+    public World()
+    {
+        parameters = new Parameters();
+    }
 }
